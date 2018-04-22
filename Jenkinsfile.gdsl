@@ -4,7 +4,7 @@ pipeline {
         stage('eMusicStore') {
             steps {
                 echo "test"
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sandeshwani/eMusicStore.git']]])
+
             }
             post {
                 success {
